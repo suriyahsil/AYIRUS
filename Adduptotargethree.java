@@ -5,7 +5,8 @@ public class Adduptotargethree {
 	public int  TargetAdd(int size,int []element,int target) {
 		int flag=0;
 		int addcount=0;
-		for(int i=0;i<size;i++) {
+	    if(size>1) {
+		  for(int i=0;i<size;i++) {
 			for(int j=i+1;j<size;j++) {
 				flag=0;
 				if(element[i]+element[j]==target) {
@@ -16,10 +17,14 @@ public class Adduptotargethree {
 					flag=1;
 				}
 			}
-		}
+		  }
 		if(flag==1&&addcount==0) {
 			System.out.print("No Two Elements Addup to the Target");
 		}
+	    }
+	    else {
+	    	System.out.print("No Two Elements Avail to Addup to the Target");
+	    }
 		return 0;
 	}
 	public static void main(String[] args) {
