@@ -11,12 +11,10 @@ public class Verticaleleven {
 		   longword=word1.length();
 		   shortword=word2.length();
 		   loop=1;
-		   System.out.println(longword+" "+shortword);
-	   }
+           }
 	   else {
 		   longword=word2.length();
 		   shortword=word1.length();
-		   System.out.println(longword+" word "+shortword);
 		   loop=2;
 	   }
 	   for(int i=0;i<shortword;i++) {
