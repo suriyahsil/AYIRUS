@@ -7,7 +7,7 @@ public class ArrayListmarkSeven {
 	ArrayList<String> marks = new ArrayList<String>();
 	int maxMark = -999999;
 	int sum = 0;
-	String Topper = "";
+	String Topper = new String("");
 	public String getArrayList(int limit,Scanner scan) {
 		System.out.println("Enter the ArrayList Marks Of The Student:");
 		for(int i=0;i<limit;i++) {
